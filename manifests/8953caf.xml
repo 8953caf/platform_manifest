@@ -88,65 +88,65 @@
   <remove-project name="platform/vendor/qcom/titanium_64" />
   <!-- REMOVE PROJECTS -->
 
-  <!-- BEGIN AOSP-CAF -->
-  <project name="device_qcom_common" path="device/qcom/common" remote="aosp-caf" />
-  <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
-  <project name="platform_art" path="art" remote="aosp-caf" />
-  <project name="platform_bionic" path="bionic" remote="aosp-caf" />
-  <project name="platform_build" path="build" remote="aosp-caf" >
+  <!-- BEGIN 8953caf -->
+  <project name="device_qcom_common" path="device/qcom/common" remote="8953caf" />
+  <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="8953caf" />
+  <project name="platform_art" path="art" remote="8953caf" />
+  <project name="platform_bionic" path="bionic" remote="8953caf" />
+  <project name="platform_build" path="build" remote="8953caf" >
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project name="platform_build_kati" path="build/kati" remote="aosp-caf" groups="pdk,tradefed" />
-  <project name="platform_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="aosp-caf" />
-  <project name="platform_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="aosp-caf" />
-  <project name="platform_external_connectivity" path="external/connectivity" remote="aosp-caf" />
-  <project name="platform_external_e2fsprogs" path="external/e2fsprogs" remote="aosp-caf" />
-  <project name="platform_external_exfat" path="external/exfat" remote="aosp-caf" />
-  <project name="platform_external_f2fs-tools" path="external/f2fs-tools" remote="aosp-caf" />
-  <project name="platform_external_fsck_msdos" path="external/fsck_msdos" remote="aosp-caf" />
-  <project name="platform_external_fuse" path="external/fuse" remote="aosp-caf" />
-  <project name="platform_external_jemalloc" path="external/jemalloc" remote="aosp-caf" />
-  <project name="platform_external_mksh" path="external/mksh" remote="aosp-caf" />
-  <project name="platform_external_ntfs-3g" path="external/ntfs-3g" remote="aosp-caf" />
-  <project name="platform_external_okhttp" path="external/okhttp" remote="aosp-caf" />
-  <project name="platform_external_skia" path="external/skia" remote="aosp-caf" />
-  <project name="platform_external_tinyalsa" path="external/tinyalsa" remote="aosp-caf" />
-  <project name="platform_external_tinycompress" path="external/tinycompress" remote="aosp-caf" />
-  <project name="platform_external_toybox" path="external/toybox" remote="aosp-caf" />
-  <project name="platform_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="aosp-caf" />
-  <project name="platform_external_zlib" path="external/zlib" remote="aosp-caf" />
-  <project name="platform_frameworks_av" path="frameworks/av" remote="aosp-caf" />
-  <project name="platform_frameworks_base" path="frameworks/base" remote="aosp-caf" />
-  <project name="platform_frameworks_native" path="frameworks/native" remote="aosp-caf" />
-  <project name="platform_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="aosp-caf" />
-  <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="aosp-caf" />
-  <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="aosp-caf" />
-  <project name="platform_hardware_qcom_bt" path="hardware/qcom/bt-caf" remote="aosp-caf" />
-  <project name="platform_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="aosp-caf" />
-  <project name="platform_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" remote="aosp-caf" />
-  <project name="platform_hardware_ril" path="hardware/ril-caf" remote="aosp-caf" />
-  <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="aosp-caf" />
-  <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="aosp-caf" />
-  <project name="platform_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="aosp-caf" />
-  <project name="platform_packages_apps_Nfc" path="packages/apps/Nfc" remote="aosp-caf" />
-  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="aosp-caf" />
-  <project name="platform_packages_apps_SnapdragonCamera" path="packages/apps/SnapdragonCamera" remote="aosp-caf" />
-  <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="aosp-caf" />
-  <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="aosp-caf" />
-  <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="aosp-caf" />
-  <project name="platform_system_bt" path="system/bt" remote="aosp-caf" />
-  <project name="platform_system_core" path="system/core" remote="aosp-caf" />
-  <project name="platform_system_extras" path="system/extras" remote="aosp-caf" />
-  <project name="platform_system_media" path="system/media" remote="aosp-caf" />
-  <project name="platform_system_netd" path="system/netd" remote="aosp-caf" />
-  <project name="platform_system_sepolicy" path="system/sepolicy" remote="aosp-caf" />
-  <project name="platform_system_vold" path="system/vold" remote="aosp-caf" />
-  <project name="platform_system_qcom" path="vendor/qcom/opensource/softap" remote="aosp-caf" />
-  <project name="platform_vendor_aosp" path="vendor/aosp" remote="aosp-caf" />
-  <project name="platform_vendor_qcom-opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="aosp-caf" />
-  <project name="platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="aosp-caf" />
-  <project name="platform_vendor_qcom-opensource_fm" path="vendor/qcom/opensource/fm" remote="aosp-caf" />
-  <!-- END AOSP-CAF -->
+  <project name="platform_build_kati" path="build/kati" remote="8953caf" groups="pdk,tradefed" />
+  <project name="platform_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="8953caf" />
+  <project name="platform_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="8953caf" />
+  <project name="platform_external_connectivity" path="external/connectivity" remote="8953caf" />
+  <project name="platform_external_e2fsprogs" path="external/e2fsprogs" remote="8953caf" />
+  <project name="platform_external_exfat" path="external/exfat" remote="8953caf" />
+  <project name="platform_external_f2fs-tools" path="external/f2fs-tools" remote="8953caf" />
+  <project name="platform_external_fsck_msdos" path="external/fsck_msdos" remote="8953caf" />
+  <project name="platform_external_fuse" path="external/fuse" remote="8953caf" />
+  <project name="platform_external_jemalloc" path="external/jemalloc" remote="8953caf" />
+  <project name="platform_external_mksh" path="external/mksh" remote="8953caf" />
+  <project name="platform_external_ntfs-3g" path="external/ntfs-3g" remote="8953caf" />
+  <project name="platform_external_okhttp" path="external/okhttp" remote="8953caf" />
+  <project name="platform_external_skia" path="external/skia" remote="8953caf" />
+  <project name="platform_external_tinyalsa" path="external/tinyalsa" remote="8953caf" />
+  <project name="platform_external_tinycompress" path="external/tinycompress" remote="8953caf" />
+  <project name="platform_external_toybox" path="external/toybox" remote="8953caf" />
+  <project name="platform_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="8953caf" />
+  <project name="platform_external_zlib" path="external/zlib" remote="8953caf" />
+  <project name="platform_frameworks_av" path="frameworks/av" remote="8953caf" />
+  <project name="platform_frameworks_base" path="frameworks/base" remote="8953caf" />
+  <project name="platform_frameworks_native" path="frameworks/native" remote="8953caf" />
+  <project name="platform_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="8953caf" />
+  <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="8953caf" />
+  <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="8953caf" />
+  <project name="platform_hardware_qcom_bt" path="hardware/qcom/bt-caf" remote="8953caf" />
+  <project name="platform_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="8953caf" />
+  <project name="platform_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" remote="8953caf" />
+  <project name="platform_hardware_ril" path="hardware/ril-caf" remote="8953caf" />
+  <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="8953caf" />
+  <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="8953caf" />
+  <project name="platform_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="8953caf" />
+  <project name="platform_packages_apps_Nfc" path="packages/apps/Nfc" remote="8953caf" />
+  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="8953caf" />
+  <project name="platform_packages_apps_SnapdragonCamera" path="packages/apps/SnapdragonCamera" remote="8953caf" />
+  <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="8953caf" />
+  <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="8953caf" />
+  <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="8953caf" />
+  <project name="platform_system_bt" path="system/bt" remote="8953caf" />
+  <project name="platform_system_core" path="system/core" remote="8953caf" />
+  <project name="platform_system_extras" path="system/extras" remote="8953caf" />
+  <project name="platform_system_media" path="system/media" remote="8953caf" />
+  <project name="platform_system_netd" path="system/netd" remote="8953caf" />
+  <project name="platform_system_sepolicy" path="system/sepolicy" remote="8953caf" />
+  <project name="platform_system_vold" path="system/vold" remote="8953caf" />
+  <project name="platform_system_qcom" path="vendor/qcom/opensource/softap" remote="8953caf" />
+  <project name="platform_vendor_aosp" path="vendor/aosp" remote="8953caf" />
+  <project name="platform_vendor_qcom-opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="8953caf" />
+  <project name="platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="8953caf" />
+  <project name="platform_vendor_qcom-opensource_fm" path="vendor/qcom/opensource/fm" remote="8953caf" />
+  <!-- END 8953caf -->
 
   <!-- BEGIN CAF -->
   <project name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" revision="refs/tags/LA.UM.5.5.r1-05100-8x96.0" />
